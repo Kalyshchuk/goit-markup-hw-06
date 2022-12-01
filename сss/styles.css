@@ -1,4 +1,3 @@
-
 /* цвет основного текста черный #212121 */
 /* цвет вторичного текста белый #757575 */
 /* акцент голубой #2196F3; */
@@ -23,8 +22,7 @@ body {
 }
 
 *,
-::before
-::after {
+::before::after {
     box-sizing: border-box;
 }
 
@@ -95,6 +93,7 @@ body {
 .link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /*  */
 
 .site {
@@ -116,7 +115,7 @@ body {
     padding-bottom: 32px;
 
     position: relative;
-} 
+}
 
 .item:last-child {
     margin-right: 0;
@@ -149,9 +148,9 @@ body {
 }
 
 .main-border:hover {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-    0px 1px 1px rgba(0, 0, 0, 0.14), 
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -163,6 +162,7 @@ body {
 .site .link {
     color: var(--main-color);
 }
+
 /* .site .link */
 
 .site .link.current {
@@ -226,7 +226,7 @@ body {
 .site-auth .link-item {
     display: flex;
     align-items: center;
-    
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -263,10 +263,8 @@ body {
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--section-background-color);
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)
-        ), 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
         url("../images/Img\(1\).png");
 }
 
@@ -309,7 +307,7 @@ body {
 
     width: 528px;
     height: 581px;
-    
+
     background-color: #ffffff;
     border-radius: 4px;
 }
@@ -338,7 +336,7 @@ body {
 .main-cross:hover,
 .main-cross:focus {
     fill: var(--accent-color);
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
 
 .modal-form {
@@ -353,7 +351,7 @@ body {
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1,15;
+    line-height: 1, 15;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
@@ -369,7 +367,7 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.modal-input:focus ~ .input-icon {
+.modal-input:focus~.input-icon {
     background-color: var(--accent-color);
 }
 
@@ -386,7 +384,7 @@ body {
     width: 100%;
     padding: 0;
     margin-bottom: 4px;
-    
+
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -463,12 +461,12 @@ body {
     fill: transprent;
 }
 
-.check-line input:checked + .checkbox-agree .icon-wrapper {
+.check-line input:checked+.checkbox-agree .icon-wrapper {
     background-color: var(--accent-color);
     border: none;
 }
 
-.check-line input:checked + .checkbox-agree .agree-icon {
+.check-line input:checked+.checkbox-agree .agree-icon {
     fill: #ffffff;
 }
 
@@ -496,7 +494,7 @@ body {
     border-radius: 4px;
     border: 1px solid transparent;
     padding: 10px 32px;
-    
+
     color: var(--button-text-color);
     background-color: var(--logo-main-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -593,7 +591,7 @@ body {
 .desc-list {
     display: flex;
     /* іконки розприділяються рівномірно по ширині сторінки */
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .desc-list .foto {
@@ -601,7 +599,7 @@ body {
 }
 
 img {
-    display:block;
+    display: block;
     width: 100%;
     height: auto;
 }
@@ -678,10 +676,10 @@ img {
 
 .card {
     background-color: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-        0px 1px 1px rgba(0, 0, 0, 0.14), 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .card {
@@ -702,7 +700,7 @@ img {
 
 .subject {
     margin: 0;
-    
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -738,9 +736,9 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -802,7 +800,7 @@ img {
 }
 
 
-.main-company:hover,  
+.main-company:hover,
 .main-company:focus {
     border-color: 1px solid var(--accent-color);
     color: var(--accent-color);
@@ -888,7 +886,7 @@ img {
     display: block;
     margin-bottom: 9px;
     color: var(--address-contact-color);
-    
+
     font-style: normal;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1037,6 +1035,7 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 /* visually-hidden */
 
 .hero-button {
@@ -1061,8 +1060,8 @@ img {
 .hero-button .btn:focus {
     color: var(--button-text-color);
     background-color: #188CE8;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-        0px 4px 4px rgba(0, 0, 0, 0.06), 
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -1168,14 +1167,14 @@ img {
     color: var(--main-color);
 }
 
-.tagline{
+.tagline {
     margin: 0;
 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    
+
     color: var(--second-color);
 }
 
@@ -1230,7 +1229,7 @@ img {
     font-size: 26px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    
+
     color: var(--logo-main-color);
 }
 
