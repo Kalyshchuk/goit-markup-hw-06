@@ -441,10 +441,38 @@ body {
     margin-bottom: 30px;
 }
 
+/* погоджуюся з розсилкою */
 .checkbox-agree {
     display: flex;
     align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
+
+/* або таким варіантом */
+
+/* .checkbox-agree::before {
+    content: '';
+    margin-right: 8px;
+    display: flex;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+} */
+
+/* .check-line input:checked + .checkbox-agree::before {
+    background-color: var(--accent-color);
+    border: none;
+    background-image: url(../images/icons.svg/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+/*  */
 
 .checkbox-agree .icon-wrapper {
     width: 16px;
@@ -458,15 +486,15 @@ body {
 }
 
 .checkbox-agree .agree-icon {
-    fill: transprent;
+    fill: transparent;
 }
 
-.check-line input:checked+.checkbox-agree .icon-wrapper {
+.check-line input:checked + .checkbox-agree .icon-wrapper {
     background-color: var(--accent-color);
     border: none;
 }
 
-.check-line input:checked+.checkbox-agree .agree-icon {
+.check-line input:checked + .checkbox-agree .agree-icon {
     fill: #ffffff;
 }
 
@@ -481,6 +509,7 @@ body {
     justify-content: center;
 }
 
+/*  */
 /*  */
 
 /* кнопка "Замовити послугу"*/
@@ -973,7 +1002,6 @@ img {
 }
 
 /* .footer-email {
-    display: flex;
     margin-left: auto;
 } */
 
