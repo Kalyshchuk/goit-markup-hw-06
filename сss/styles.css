@@ -31,8 +31,6 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-
-    /* outline: 2px solid gray; */
 }
 
 .logo .title {
@@ -337,7 +335,6 @@ body {
 }
 
 .modal-form {
-    /* display: block; */
     text-align: start;
 }
 
@@ -356,14 +353,9 @@ body {
 .modal-input {
     width: 100%;
     height: 40px;
-    margin-bottom: 10px;
     padding-left: 45px;
     border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.modal-input:focus~.input-icon {
-    background-color: var(--accent-color);
+    border: 5px solid rgba(33, 33, 33, 0.2);
 }
 
 .modal-input::placeholder {
@@ -396,16 +388,25 @@ body {
     margin-bottom: 0;
 }
 
+.input-wrapper:focus-within > .modal-input {
+    border-color: var(--accent-color);
+}
+
 .input-icon {
     position: absolute;
-    left: 15px;
+    left: 13px;
     top: 50%;
     transform: translateY(-50%);
     fill: #212121;
 }
 
-/* .modal-input:focus + .input-icon {
-    fill: orange;
+.modal-input:focus + .input-icon,
+.modal-input:hover + .input-icon {
+    fill: var(--accent-color);
+}
+
+/* .modal-input:focus + .input-wrapper{
+    border: #2196F3;
 } */
 
 .comment {
@@ -448,8 +449,6 @@ body {
     color: var(--second-color);
 }
 
-/* або таким варіантом */
-
 .checkbox-agree::before {
     content: '';
     margin-right: 8px;
@@ -463,9 +462,12 @@ body {
 .check-line input:checked + .checkbox-agree::before {
     background-color: var(--accent-color);
     border: none;
-    background-image: url(../images/icons.svg/);
+    background-image: url(../images/icons.svg/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
-/*  */
+
+/* або таким варіантом */
 
 /* .checkbox-agree .icon-wrapper {
     width: 16px;
@@ -490,6 +492,7 @@ body {
 /* .check-line input:checked + .checkbox-agree .agree-icon {
     fill: #ffffff;
 } */
+/*  */
 
 .modal-conditions {
     color: var(--accent-color);
@@ -502,7 +505,6 @@ body {
     justify-content: center;
 }
 
-/*  */
 /*  */
 
 /* кнопка "Замовити послугу"*/
@@ -1000,6 +1002,14 @@ img {
     background-color: var(--section-background-color);
     border-radius: 4px;
     margin-right: 12px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.71;
+    color:#757575;
+}
+
+.email:focus {
+    border: rgba(255, 255, 255, 0.3);
 }
 
 .telegram {
