@@ -25,7 +25,7 @@
             </nav>
             <ul class="site-auth list">
                 <li class="site-auth__item">
-                    <a class="main-mail main-contact mail-icon" href="mailto:info@devstudio.com">
+                    <a class="main-mail" href="mailto:info@devstudio.com">
                         <svg class="main-mail__link-icon" width="16" height="12">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
                         </svg>
@@ -34,7 +34,7 @@
                 </li>
                 <li class="site-auth__item">
                     <a class="main-tel tel-icon" href="tel:+380961111111">
-                        <svg class="link-icon" width="10" height="16">
+                        <svg class="main-tel__link-icon" width="10" height="16">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -47,7 +47,7 @@
         <section class="section overlay">
             <div class="container">
                 <h1 class="section__title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="section__button" data-modal-open type="button">Замовити послугу</button>
+                <button class="button" data-modal-open type="button">Замовити послугу</button>
             </div>
             <!-- модальне вікно -->
             <div class="backdrop is-hidden" data-modal>
@@ -128,43 +128,43 @@
         <section class="list strong">
             <div class="container">
                 <h2 class="visually-hidden">Переваги</h2>
-                <ul class="list-items list">
-                    <li class="items">
-                        <div class="main-antenna">
+                <ul class="benefits list">
+                    <li class="benefits__items">
+                        <div class="benefits__antenna">
                             <svg class="antenna" width="70" height="70">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="quote">Увага до деталей</h3>
-                        <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                        <h3 class="benefits__quote">Увага до деталей</h3>
+                        <p class="benefits__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                         </p>
                     </li>
-                    <li class="items">
-                        <div class="main-antenna">
+                    <li class="benefits__items">
+                        <div class="benefits__antenna">
                             <svg class="antenna" width="70" height="70">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="quote">Пунктуальність</h3>
-                        <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                        <h3 class="benefits__quote">Пунктуальність</h3>
+                        <p class="benefits__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li class="items">
-                        <div class="main-antenna">
+                    <li class="benefits__items">
+                        <div class="benefits__antenna">
                             <svg class="antenna" width="70" height="70">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="quote">Планування</h3>
-                        <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        <h3 class="benefits__quote">Планування</h3>
+                        <p class="benefits__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="items">
-                        <div class="main-antenna">
+                    <li class="benefits__items">
+                        <div class="benefits__antenna">
                             <svg class="antenna" width="70" height="70">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="quote">Сучасні технології</h3>
-                        <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                        <h3 class="benefits__quote">Сучасні технології</h3>
+                        <p class="benefits__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
                 </ul>
             </div>
@@ -172,27 +172,28 @@
         <section class="desc">
             <div class="container">
                 <h2 class="desc-one">Чим ми займаємося</h2>
-                <ul class="desc-list list">
-                    <li class="foto">
+                <ul class="work list">
+                    <li class="work__foto">
                         <img src="./images/img.jpg" alt="Десктопні додатки" width="370">
                         <!-- текст поверх картинки -->
-                        <div class="desktop">
+                        <div class="work__desktop">
                             <p class="applications">
                                 Десктопні додатки
                             </p>
                         </div>
+                        <!--  -->
                     </li>
-                    <li class="foto">
+                    <li class="work__foto">
                         <img src="./images/img(1).jpg" alt="Мобільні додатки" width="370">
-                        <div class="desktop">
+                        <div class="work__desktop">
                             <p class="applications">
                                 Мобільні додатки
                             </p>
                         </div>
                     </li>
-                    <li class="foto">
+                    <li class="work__foto">
                         <img src="./images/img(2).jpg" alt="Дизайнерські рішення" width="370">
-                        <div class="desktop">
+                        <div class="work__desktop">
                             <p class="applications">
                                 Дизайнерські рішення
                             </p>
@@ -358,47 +359,47 @@
                 </ul>
             </div>
         </section>
-        <section class="pre-clients">
+        <section class="client">
             <div class="container">
-                <h2 class="clients">Постійні клієнти</h2>
-                <ul class="logo-company">
-                    <li class="pre-company">
-                        <a href="" class="main-company">
+                <h2 class="client__company">Постійні клієнти</h2>
+                <ul class="companys">
+                    <li class="companys__logo">
+                        <a href="" class="companys__company">
                             <svg class="company" width="106" height="60">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-Logo1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="pre-company">
-                        <a href="" class="main-company">
+                    <li class="companys__logo">
+                        <a href="" class="companys__company">
                             <svg class="company" width="106" height="60">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-Logo2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="pre-company">
-                        <a href="" class="main-company">
+                    <li class="companys__logo">
+                        <a href="" class="companys__company">
                             <svg class="company" width="106" height="60">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-Logo3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="pre-company">
-                        <a href="" class="main-company">
+                    <li class="companys__logo">
+                        <a href="" class="companys__company">
                             <svg class="company" width="106" height="60">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-Logo4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="pre-company">
-                        <a href="" class="main-company">
+                    <li class="companys__logo">
+                        <a href="" class="companys__company">
                             <svg class="company" width="106" height="60">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-Logo5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="pre-company">
-                        <a href="" class="main-company">
+                    <li class="companys__logo">
+                        <a href="" class="companys__company">
                             <svg class="company" width="106" height="60">
                                 <use href="./images/icons.svg/symbol-defs.svg#icon-Logo6"></use>
                             </svg>
