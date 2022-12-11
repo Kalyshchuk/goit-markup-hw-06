@@ -13,28 +13,28 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="container main-nav">
-            <nav class="header-nav">
-                <a href="/" class="logo">Web<span class="title">Studio</span>
+        <div class="container header-nav">
+            <nav class="main-nav">
+                <a href="/" class="main-nav__logo">Web<span class="main-nav__name">Studio</span>
                 </a>
-                <ul class="site list">
-                    <li class="item"><a class="link" href="./index.html">Студія</a></li>
-                    <li class="item"><a class="link current" href="/">Портфоліо</a></li>
-                    <li class="item"><a class="link" href="/">Контакти</a></li>
+                <ul class="main-nav__site list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="/">Студія</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link current" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="/">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="site-auth list">
-                <li class="item">
-                    <a class="main-mail main-contact mail-icon" href="mailto:info@devstudio.com">
-                        <svg class="link-icon" width="16" height="12">
+                <li class="site-auth__item">
+                    <a class="main-mail" href="mailto:info@devstudio.com">
+                        <svg class="main-mail__link-icon" width="16" height="12">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="item">
-                    <a class="link-item tel-icon" href="tel:+380961111111">
-                        <svg class="link-icon" width="10" height="16">
+                <li class="site-auth__item">
+                    <a class="main-tel tel-icon" href="tel:+380961111111">
+                        <svg class="main-tel__link-icon" width="10" height="16">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -263,7 +263,13 @@
                     Підпишіться на розсилку
                 </p>
                 <form name="footer-email" class="footer-email">
-                    <input type="email" class="email" name="user-email" id="" placeholder="E-mail">
+                    <input 
+                    type="email" 
+                    class="email" 
+                    name="user-email" 
+                    id="" 
+                    placeholder="E-mail"
+                    >
                     <button type="submit" class="button telegram">
                         Підписатися
                         <svg class="icon-telegram" width="24" height="24">
